@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>Coffee Shop</h1>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#menu">Thực đơn</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Chào mừng đến với Coffee Shop</h2>
+            <p>Thưởng thức những ly cà phê thơm ngon và không gian ấm cúng.</p>
+            <a href="#menu" class="btn">Khám phá thực đơn</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2>Thực đơn</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Espresso</h3>
+                    <p>Cà phê đậm đà, thơm ngon, được pha chế từ hạt cà phê nguyên chất.</p>
+                    <p class="price">50.000 VNĐ</p>
+                </div>
+                <div class="card">
+                    <h3>Cappuccino</h3>
+                    <p>Lớp bọt sữa mịn màng kết hợp cùng cà phê espresso.</p>
+                    <p class="price">60.000 VNĐ</p>
+                </div>
+                <div class="card">
+                    <h3>Latte</h3>
+                    <p>Cà phê sữa ngọt ngào với lớp bọt sữa nghệ thuật.</p>
+                    <p class="price">65.000 VNĐ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Dịch vụ</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Không gian thoải mái</h3>
+                    <p>Thư giãn trong không gian ấm cúng, lý tưởng để làm việc hoặc gặp gỡ bạn bè.</p>
+                </div>
+                <div class="card">
+                    <h3>Giao hàng tận nơi</h3>
+                    <p>Đặt hàng online và nhận cà phê ngay tại nhà.</p>
+                </div>
+                <div class="card">
+                    <h3>Sự kiện & Tiệc</h3>
+                    <p>Tổ chức các sự kiện hoặc tiệc sinh nhật tại quán.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Liên hệ</h2>
+            <div class="contact-info">
+                <p><strong>Địa chỉ:</strong> 123 Đường Cà Phê, Quận 1, TP.HCM</p>
+                <p><strong>Điện thoại:</strong> 0123 456 789</p>
+                <p><strong>Email:</strong> info@coffeeshop.vn</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="hidden">
+        <div class="chat-header">
+            <h3>Chat với chúng tôi</h3>
+            <button id="closeChat">✖</button>
+        </div>
+        <div id="chatMessages"></div>
+        <div class="chat-input">
+            <input id="chatInput" type="text" placeholder="Nhập câu hỏi...">
+        </div>
+    </div>
+    <button id="chatButton">💬</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
